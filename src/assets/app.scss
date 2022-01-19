@@ -1,0 +1,150 @@
+$orange: #E94E1B;
+$black: #e4e5e9;
+.lead-form {
+  .container, .logo_wrapper {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo_wrapper {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 12px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__header {
+    &_logo {
+      width: 100%;
+      padding: 1rem;
+      background: $orange;
+      display: flex;
+      justify-content: end;
+    }
+
+    h1 {
+      color: $orange;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      border-bottom: 1px solid #f0eff3;
+      padding-bottom: 3rem;
+      margin-top: 3rem;
+    }
+
+  }
+
+  &__form {
+
+    margin: auto;
+
+    h2, label {
+      color: #2D2E36;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: #2D2E36;
+      margin: 2rem 0 0;
+    }
+
+    p {
+      color: #a8a8a9fc;
+    }
+
+    .v-text-field__slot {
+      flex-direction: column;
+    }
+
+    .v-select__slot {
+      display: block;
+
+      .v-input__append-inner {
+        position: absolute;
+        top: 60%;
+        right: 30px;
+        transform: translateY(-50%);
+      }
+    }
+
+    .v-input__control .v-input__slot {
+      all: unset;
+      transition: none !important;
+    }
+
+    input, .v-input__slot {
+      background-color: #eff3f4;
+      border-radius: 5px;
+    }
+
+    .v-text-field input {
+      max-width: 95%;
+      padding: 0.8rem;
+    }
+
+    .v-label--active, .v-label {
+      all: unset !important;
+      font-weight: 600;
+      color: $black;
+    }
+
+    .v-input__slot {
+      &:before {
+        display: none;
+      }
+    }
+
+    .v-input__prepend-outer {
+      display: none;
+    }
+
+    .v-input--checkbox {
+      .v-input__slot {
+        display: flex;
+      }
+    }
+
+    .v-select__selections {
+      background-color: #eff3f4;
+      padding-left: 10px;
+      border-radius: 5px;
+    }
+
+    .v-text-field > .v-input__control > .v-input__slot:after {
+      display: none;
+    }
+
+    .theme--light.v-label {
+      color: inherit;
+      font-weight: 500;
+    }
+
+    button.v-btn {
+      background-color: $orange !important;
+      color: white;
+      min-width: 250px !important;
+      padding: 1.3rem !important;
+      margin-top: 3rem;
+    }
+
+    .products {
+      h5 {
+        margin-top: 2rem;
+        margin-inside: 1rem;
+      }
+
+      .v-messages {
+        display: none;
+      }
+
+      .v-input--selection-controls {
+      }
+    }
+  }
+}
