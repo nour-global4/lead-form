@@ -358,8 +358,6 @@ export default {
       const url = process.env.VUE_APP_TELESALES_APP_URL ? process.env.VUE_APP_TELESALES_APP_URL : 'http://localhost:8085'
       axios.post(`${url}/api/external/leads-form`, this.payload)
           .then((response) => {
-            console.log(response);
-
             if (response.data.success === true) {
               this.snackbarTrigger();
             }

@@ -7,13 +7,12 @@ services:
   site:
     build:
       context: .
-      dockerfile: nginx.dockerfile
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www/lead-form
     container_name: nginx_lead_form
     ports:
-      - "80:80"
-    volumes:
-      - ./dist:/var/www/html:delegated
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - "8011:80"
     networks:
       project:
 
